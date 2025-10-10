@@ -5,7 +5,7 @@ public class CreateYourOwnMiniATM {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Predefined users: PINs and balances
+        
         int[] userPins = {1234, 2345, 3456, 4567, 5678};
         double[] balances = {5000, 10000, 7500, 12000, 3000};
 
@@ -13,7 +13,7 @@ public class CreateYourOwnMiniATM {
 
         System.out.println("Welcome to the ATM!");
 
-        // PIN validation loop
+    
         int attempts = 0;
         int userIndex = -1;
 
@@ -21,7 +21,7 @@ public class CreateYourOwnMiniATM {
             System.out.print("Enter your 4-digit PIN: ");
             int pin = sc.nextInt();
 
-            // Check if PIN matches any user
+        
             boolean valid = false;
             for (int i = 0; i < userPins.length; i++) {
                 if (pin == userPins[i]) {
@@ -46,7 +46,7 @@ public class CreateYourOwnMiniATM {
             return;
         }
 
-        // ATM menu
+        
         while (true) {
             System.out.println("\n--- ATM Menu ---");
             System.out.println("1. Check Balance");
